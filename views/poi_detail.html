@@ -1,0 +1,18 @@
+<section>
+  <header class="page-header">
+    <h3>
+      <i class="glyphicon glyphicon-home">
+      {{poi.name}} ( {{poi.bizCatName}} )
+    </h3>
+  </header>
+
+  <div class="gmap-wrapper">
+    <div class="google-map" center="position.coords" zoom="zoomProperty" markers="markersProperty" latitude="clickedLatitudeProperty" longitude="clickedLongitudeProperty" mark-click="true" draggable="true" fit="false" events="eventsProperty">
+    </div>
+  </div>
+
+  <pre class="prettyprint lang-html">
+    {{poi|json}}
+  </pre>
+
+</section>
