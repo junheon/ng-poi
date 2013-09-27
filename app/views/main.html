@@ -1,0 +1,25 @@
+<section>
+  <article class="panel panel-default" ng-repeat="poi in pois">
+    <header class="panel-heading">
+      <strong>{{poi.name}}</strong>
+    </header>
+
+    <div class="panel-body">
+      <address>
+        {{poi.upperAddrName}} {{poi.middleAddrName}} {{poi.lowerAddrName}} {{poi.detailAddrName}}
+        {{[poi.firstNo, poi.secondNo].join('-')}}
+      </address>
+    </div>
+
+    <footer class="panel-footer" style="text-align: right;">
+      <a ng-href="tel:{{poi.telNo}}" class="btn btn-success btn-md">
+        전화걸기
+      </a>
+      <a ng-href="#/pois/{{poi.id}}" class="btn btn-primary btn-md">
+        상세정보
+      </a>
+    </footer>
+  </article>
+</section>
+
+<div infinite-scroll="fetchPois()" infinite-scroll-distance="3"></div>

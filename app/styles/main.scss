@@ -1,0 +1,27 @@
+$icon-font-path: "/bower_components/bootstrap-sass/fonts/";
+
+@import "bootstrap-sass/lib/bootstrap";
+
+body {
+  padding-top: 60px;
+
+  background: #fafafa;
+  color: #333;
+}
+
+.gmap-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 50%;
+  position: relative;
+
+  border: 1px solid #ccc;
+
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
